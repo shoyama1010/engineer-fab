@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>fab</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".slideshow").bxSlider({
+        auto: true,
+        mode: 'fade',
+        speed: 1000,
+        pager: false,
+        controls: false,
+      })
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <header class="page-header ">
+    <div class="header-wrapper">
+      <h1 class="head-logo">LOGO</h1>
+      <nav>
+        <ul class="main-navi">
+          <li>工房概要</li>
+          <li>サービス</li>
+          <li>ブログ</li>
+          <li><a href="page-contact">問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ・・・・メイン・・・・ -->
+  <main class="main-fab">
+    <div class="slideshow">
+      <img src="./img/fab.jpg">
+      <img src="./img/img_main.png">
+      <img src="./img/waxrejin.webp">
+    </div>
+
+    <div class="catch-copy">
+      <h2>ものつくりFAB</h2>
+      <p>アプリ開発からガラス工芸まで</p>
+    </div>
+  </main>
+
+  <!-- ・・・・BROG・・・・ -->
+  <div class="brog_box">
+    <div class="brog-wrapper">
+      <h3>BLOG</h3>
+      <p>独り言</p>
+      
+      <div class="pic">
+        <div>
+          <img src="./img/freeski.jpeg">
+          <P class="memo">本日はピーカン！</P>
+          昨日は〇〇高原スキー場へ<br>行ってきました！先日に大量の雪降って、当<br>日は晴れ！！スノーパークには大勢<br>の人がおり、混みあってましたが<br>（笑い）。エア台で、「グラブ」も決<br>まって、最高でした！
+        </div>
+        <div>
+          <img src="./img/sk8.png">
+          <P class="memo">本日はスケート日和！</P>
+          暑い時期をさけて、〇〇スケート<br>パークに行ってきました！<br>さほど混んでなく、スケボーさん達<br>とのセッションも気持ちよく、滑れ<br>ました。やはり、一日工房に籠る<br>と、むずむずしますね～。
+        </div>
+        <div>
+          <img src="./img/dog.jpg">
+          <P>うちのわんこ！</P>
+          暑い夏は、わんこもバテバテです。<br>ゆっくり寝てください。今年はドッ<br>クランにも行ってないなぁ。。
+        </div>
+        <div>
+          <img src="./img/slackline.jpg">
+          <P>久しぶりのスラックライン！</P>
+          約１年ぶりのバランススポーツ会。<br>インラインスケートはもちろんのこ<br>と、スラックラインの講師の〇〇さ<br>んも来て頂き、子どもたちが、ワイ<br>ワイ楽しんでました。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ・・・・工房概要・・・・ -->
+
+  <div class="page-kobou">
+    <div class="kobou-wrapper">
+      <div class="kobou">
+        <h4>ものつくりFAB</h4>
+        <p>工房概要</p>
+      </div>
+
+      <div class="content">
+        <div class="pic1">
+          <img src="./img/kobou.jpeg">
+        </div>
+
+        <div class="kobou">
+          <h5>業務概要<h5>
+              <ul>
+                <li>HPのweb制作及び携帯用アプリ開発</li>
+                <li>ガラス工芸（フュージング＆トンボ玉）</li>
+                <li>３ｄフィギュア（工業用パーツ及び試作）</li>
+                <li>フリーランス・エンジニア(請負)</li>
+                <li><a href="https://kochisk-tora.jimdofree.com/">（番外）高知バランススポーツ運営</a></li>
+              </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ・・・・・サービス（内容）・・・・・ -->
+  <div class="service">
+    <div class="service-wrapper">
+      <div class="about">
+        <h>SERVICE</h>
+        <p>内容</p>
+      </div>
+
+      <!-- ・・・・無限スクロール・・・・ -->
+      <div class="slider">
+        <div class="img"><img src="./img/HPenjiner.jpeg" alt=""></div>
+        <div class="img"><img src="./img/fusing.jpg" alt=""></div>
+        <div class="img"><img src="./img/tomboglass.jpg" alt=""></div>
+        <div class="img"><img src="./img/WebEnjiner.jpeg" alt=""></div>
+        <div class="img"><img src="./img/3Dprint.jpg" alt=""></div>
+      </div>
+
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+      <script src="js/slick.min.js"></script>
+      <script>
+        $(function () {
+          $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 5000,
+            arrows: false,
+            swipe: false,
+            slidesToShow: 4,
+            cssEase: 'linear',
+            pauseOnFocus: false,
+            pauseOnHover: false,
+          });
+        });
+      </script>
+    </div>
+  </div>
+
+  <!-- ・・・・・問い合わせ・・・・・ -->
+  <div class="page-contact">
+    <div class="contact-wrapper">
+      <div class="contact">
+        <h>CONTACT</h>
+        <p>お問い合わせ</p>
+      </div>
+
+      <div class="form">
+        <form>
+          <div class="item">
+            <label class="label">氏名</label>
+            <input class="inputs" type="text" name="you-name">
+          </div>
+          <br>
+          <div class="item">
+            <label class="label">メール</label>
+            <input class="inputs" type="email" name="you-email">
+          </div>
+          <br>
+          <div class="item">
+            <label class="label">電話番号</label>
+            <input class="inputs" type="number" name="you-number">
+          </div>
+          <br>
+          <div class="item">
+            <label for="name">内容</label>
+            <textarea name="info" rows="10" cols="50"></textarea>
+          </div>
+          <div class="btn-area">
+            <input type="submit" class="button" value="送信">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- .......フッター・・・・ -->
+  <footer>
+    copyright©internous|sho.yam@nifty.com
+  </footer>
+</body>
+
+</html>
